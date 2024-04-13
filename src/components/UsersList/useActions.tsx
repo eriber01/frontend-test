@@ -18,7 +18,7 @@ export const useActions = () => {
     const session = onGetSession()
 
     if (!session?.token) {
-      navigate('/')
+      navigate('/login')
       return
     }
 
